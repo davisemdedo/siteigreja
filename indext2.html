@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunidade Evangélica Aliança de Amor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background: #f5f7fa;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* Cabeçalho */
+    header {
+      background: linear-gradient(135deg, #4a90e2, #7b4397);
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header img {
+      height: 80px;
+      width: auto;
+      border-radius: 8px;
+      display: block;
+      margin: auto 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      padding: 8px 14px;
+      border-radius: 8px;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.05);
+    }
+
+    /* Hero */
+    .hero {
+      background: url("IMG_5586.jpg") center/cover no-repeat;
+      color: #ffffff;
+      height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .hero h2 {
+      font-size: 44px;
+      max-width: 800px;
+      z-index: 1;
+      position: relative;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      animation: fadeInUp 1.5s ease;
+      background: rgba(255,255,255,0.1);
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Seções */
+    section {
+      padding: 70px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #7b4397;
+      margin-bottom: 20px;
+      font-size: 34px;
+      text-align: center;
+      font-weight: 700;
+      position: relative;
+    }
+
+    section h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #7b4397;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    section p {
+      text-align: center;
+      font-size: 18px;
+      max-width: 850px;
+      margin: auto;
+      color: #555;
+    }
+
+    /* Sobre */
+    .sobre-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .sobre-container h3 {
+      font-size: 24px;
+      color: #4a90e2;
+      font-weight: 600;
+    }
+
+    .sobre-container .cta-button {
+      display: inline-block;
+      margin
