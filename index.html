@@ -46,6 +46,8 @@
     nav {
       display: flex;
       gap: 15px;
+      flex-direction: row;
+      transition: max-height 0.4s ease, opacity 0.4s ease;
     }
 
     nav a {
@@ -203,21 +205,21 @@
       }
 
       nav {
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
         position: absolute;
         top: 100%;
         right: 0;
         background: linear-gradient(135deg, #4a90e2, #7b4397);
-        flex-direction: column;
-        width: 100%;
-        display: none;
-        opacity: 0;
-        transition: all 0.3s ease;
       }
 
       nav.active {
-        display: flex;
+        max-height: 500px; /* ajustável se tiver mais links */
         opacity: 1;
-        animation: slideDown 0.3s ease forwards;
       }
 
       nav a {
@@ -239,11 +241,6 @@
         font-size: 16px;
       }
     }
-
-    @keyframes slideDown {
-      0% { transform: translateY(-20px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
-    }
   </style>
 </head>
 <body>
@@ -258,7 +255,7 @@
       <a href="#sobre">Sobre</a>
       <a href="#eventos">Eventos</a>
       <a href="#contato">Contato</a>
-      <a href="https://link-do-seu-pedido.com" target="_blank">Pedido de Oração</a>
+      <a href="https://wa.me/5532988027466" target="_blank">Pedido de Oração</a>
     </nav>
   </header>
 
